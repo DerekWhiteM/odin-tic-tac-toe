@@ -103,6 +103,6 @@ const TicTacToe = (function() {
 
     return { init: () => Gameboard.init() };
 
-})()
+})();
 
 TicTacToe.init();
