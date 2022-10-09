@@ -1,0 +1,45 @@
+:root {
+    --borderStyle: 1px solid black;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+    justify-items: center;
+    justify-content: center;
+}
+
+.gameBoard__box {
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gameBoard__box__mark {
+    align-self: center;
+}
+
+.border--horizontal {
+    border-top: var(--borderStyle);
+    border-bottom: var(--borderStyle);
+}
+
+.border--vertical {
+    border-left: var(--borderStyle);
+    border-right: var(--borderStyle);
+}
